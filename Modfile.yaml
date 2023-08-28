@@ -1,7 +1,7 @@
 modfileVersion: "v1"
 id: github.com/SENERGY-Platform/mgw-device-command
 name: Device Command
-version: v0.0.1
+version: v0.0.2
 type: add-on
 deploymentType: single
 license: "Apache License 2.0"
@@ -11,6 +11,7 @@ dependencies:
     requiredServices:
       broker:
         - refVar: MGW_MQTT_BROKER
+          template: "tcp://{ref}:1883"
           services:
             - device-command
   github.com/SENERGY-Platform/mgw-last-value-module:
@@ -18,6 +19,7 @@ dependencies:
     requiredServices:
       mgw-last-value:
         - refVar: TIMESCALE_WRAPPER_URL
+          template: "http://{ref}:8080"
           services:
             - device-command
 services:
