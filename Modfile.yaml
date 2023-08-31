@@ -1,7 +1,7 @@
 modfileVersion: "v1"
 id: github.com/SENERGY-Platform/mgw-device-command
 name: Device Command
-version: v0.0.2
+version: v0.0.3
 type: add-on
 deploymentType: single
 license: "Apache License 2.0"
@@ -26,6 +26,9 @@ services:
   device-command:
     name: device-command
     image: ghcr.io/senergy-platform/device-command:v1.0.0
+    ports:
+      - port: 8080
+        hostPort: 8002
 volumes:
   mgw-device-command:
     - mountPoint: /vol
