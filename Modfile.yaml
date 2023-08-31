@@ -1,7 +1,7 @@
 modfileVersion: "v1"
 id: github.com/SENERGY-Platform/mgw-device-command
 name: Device Command
-version: v0.0.3
+version: v0.0.4
 type: add-on
 deploymentType: single
 license: "Apache License 2.0"
@@ -92,7 +92,7 @@ configs:
       group: platform
   deviceRepoUrl:
     dataType: string
-    value: "https://api.senergy.infai.org/device-repositor"
+    value: "https://api.senergy.infai.org/device-repository"
     targets:
       - refVar: DEVICE_REPOSITORY_URL
         services:
