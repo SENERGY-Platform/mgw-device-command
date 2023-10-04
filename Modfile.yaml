@@ -1,7 +1,7 @@
 modfileVersion: "v1"
 id: github.com/SENERGY-Platform/mgw-device-command
 name: Device Command
-version: v0.0.4
+version: v0.0.5
 type: add-on
 deploymentType: single
 license: "Apache License 2.0"
@@ -49,7 +49,7 @@ secrets:
     userInput:
       name: Auth Credentials
   clientId:
-    type: api-key
+    type: client-id
     targets:
       - refVar: AUTH_CLIENT_ID
         services:
