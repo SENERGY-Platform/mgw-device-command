@@ -1,7 +1,7 @@
 modfileVersion: "v1"
 id: github.com/SENERGY-Platform/mgw-device-command
 name: Device Command
-version: v1.0.3
+version: v1.0.4
 type: add-on
 deploymentType: single
 license: "Apache License 2.0"
@@ -119,7 +119,7 @@ configs:
           - device-command
   debug:
     dataType: string
-    value: "true"
+    value: "false"
     options:
       - "true"
       - "false"
