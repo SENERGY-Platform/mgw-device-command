@@ -37,7 +37,7 @@ dependencies:
 services:
   device-command:
     name: device-command
-    image: ghcr.io/senergy-platform/device-command:v1.0.32
+    image: ghcr.io/senergy-platform/device-command:v1.0.42
     ports:
       - port: 8080
         hostPort: 8002
